@@ -36,7 +36,7 @@ def do_deploy(archive_path):
     if not path.exists(archive_path) and not path.isfile(archive_path):
         return False
 
-    myspath = archive_path.split('/').split(".")
+    myspath = archive_path.split('/')[1].split(".")
     i = myspath[0]
 
     try:
