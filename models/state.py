@@ -2,6 +2,7 @@
 """This is the state class"""
 from models.base_model import BaseModel, Base
 import models
+from models.city import City
 from sqlalchemy import Column, String
 from os import getenv
 from sqlalchemy.orm import relationship, backref
