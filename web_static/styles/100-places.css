@@ -20,7 +20,7 @@ section.places article{
     text-align: center;
 }
 
-section.places h2 {
+section.places article > h2 {
     font-size: 30px;    
     display: inline-flex;
     margin-bottom: 30px;
@@ -47,7 +47,7 @@ section.places .information{
     display: flex;
     justify-content: center;
     padding-top: 5px;
-    padding-bottom: 2px;    
+    padding-bottom: 2px;
 }
 
 section.places .information div{
@@ -73,4 +73,65 @@ section.places .information div{
 }
 div.description {
     text-align: start;
+}
+
+section.places .amenities h2,
+section.places .reviews h2{
+    font-size: 16px;
+    border-bottom:1px solid #DDDDDD;
+    text-align: start;
+}
+
+section.places .amenities h3,
+section.places .reviews h3{
+    font-size: 14px;
+}
+
+section.places .reviews h3{
+    margin-bottom: 3px;
+}
+
+section.places .amenities p,
+section.places .reviews p{
+    font-size: 12px;
+}
+
+section.places .amenities, 
+section.places .reviews{
+    margin-top: 40px;
+}
+
+section.places .amenities ul,
+section.places .reviews ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+section.places .amenities li,
+section.places .reviews li{
+    text-align: start;
+}
+section.places .amenities li{
+    height: 20px;
+    padding-left: 25px;
+    padding-top: 3px;
+    margin-bottom: 10px;
+}
+
+section.places .reviews li{
+    margin-bottom: 20px;
+}
+
+.amenities .icon_TV{
+    background: url("../images/icon_tv.png") no-repeat left;
+    background-size: 20px 20px;
+}
+
+.amenities .icon_Wifi{
+    background: url("../images/icon_wifi.png") no-repeat left;
+    background-size: 20px 20px;
+}
+
+.amenities .icon_Pet{
+    background: url("../images/icon_pets.png") no-repeat left;
+    background-size: 20px 20px;
 }
