@@ -59,8 +59,13 @@ section.filters > div:nth-child(1){
     padding-left: 15%;
     padding-top: 20px;
     padding-bottom: 30px;
+    height: 300px;
+    overflow-y: scroll;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 .locations:hover .popover,
 .amenities:hover .popover {
@@ -75,11 +80,13 @@ section.filters > div:nth-child(1){
     font-size: 16px;
     font-weight: 800;
     padding-top: 10px;
+    word-wrap: break-word;
 }
 
 .locations .popover li {
     padding-left: 20px;
     padding-top: 10px;
+    word-wrap: break-word;
 }
 
 .amenities .popover li{
