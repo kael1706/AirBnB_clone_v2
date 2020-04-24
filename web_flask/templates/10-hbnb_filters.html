@@ -25,16 +25,11 @@
 		    {% for state in states|sort(attribute='name') %}
                     <h2>{{ state.name }}</h2>
                     <ul>
-			{% for city in states.cities|sort(attribute='name') %}
+			{% for city in state.cities|sort(attribute='name') %}
                         <li>{{ city.name }}</li>
 			{% endfor %}
                     </ul>
                     {% endfor %}
-                    <h2>California:</h2>
-                    <ul>
-                        <li>San Francisco</li>
-                        <li>Los Altos</li>
-                    </ul>
                 </div>
             </div>
             <div class="amenities">
