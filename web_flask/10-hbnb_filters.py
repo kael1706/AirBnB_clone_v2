@@ -20,10 +20,7 @@ def teardown_storage(exception):
 @app.route('/hbnb_filters', strict_slashes=False)
 def filters_action(id=None):
     """hbnb filters"""
-    tmp = storage.all(State).values()
-    for item in tmp:
-        print(item.cities)
-    print(tmp)
+
     return render_template(
         '10-hbnb_filters.html',
         states=storage.all(State).values(),
